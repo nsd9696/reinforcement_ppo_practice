@@ -43,7 +43,7 @@ class PPO(nn.Module):
         self.data.append(item)
 
     def make_batch(self):
-        s_lst, a_lst, r_lst, s_prime_lst, prob_a_lst, done_lst = [], [], [], [], []
+        s_lst, a_lst, r_lst, s_prime_lst, prob_a_lst, done_lst = [], [], [], [], [], []
         for item in self.data:
             s, a, r, s_prime, prob_a, done = item
 
